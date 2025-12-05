@@ -4,15 +4,22 @@ import (
 	"context"
 	"fmt"
 	"log"
+	"os"
 
 	browseruse "github.com/yourusername/browser-use-go-sdk"
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	// Load .env file from parent directory
+	if err := godotenv.Load("../.env"); err != nil {
+		log.Printf("Warning: Error loading .env file: %v", err)
+	}
+
 	// Create a new Browser Use client
 	// API key can be provided here or via BROWSER_USE_API_KEY environment variable
 	client, err := browseruse.NewClient(&browseruse.ClientOptions{
-		APIKey: "bu_...", // Optional if BROWSER_USE_API_KEY is set
+		APIKey: os.Getenv("BROWSER_USE_API_KEY"), // Load from environment variable
 	})
 	if err != nil {
 		log.Fatalf("Failed to create client: %v", err)
