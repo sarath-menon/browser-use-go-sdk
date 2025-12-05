@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	browseruse "github.com/yourusername/browser-use-go-sdk"
+	browseruse "github.com/sarath-menon/browser-use-go-sdk"
 	"github.com/joho/godotenv"
 )
 

@@ -5,7 +5,7 @@ Official Go SDK for the [Browser Use](https://browser-use.com) API - Control web
 ## Installation
 
 ```bash
-go get github.com/yourusername/browser-use-go-sdk
+go get github.com/sarath-menon/browser-use-go-sdk
 ```
 
 ## Quick Start
@@ -18,7 +18,7 @@ import (
     "fmt"
     "log"
 
-    browseruse "github.com/yourusername/browser-use-go-sdk"
+    browseruse "github.com/sarath-menon/browser-use-go-sdk"
 )
 
 func main() {

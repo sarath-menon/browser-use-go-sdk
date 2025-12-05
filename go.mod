@@ -1,3 +1,3 @@
-module github.com/yourusername/browser-use-go-sdk
+module github.com/sarath-menon/browser-use-go-sdk
 
 go 1.21
